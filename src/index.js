@@ -6,7 +6,7 @@ import rootReducer from './reducers';
 import App from './components/App';
 
 // middleware
-const logger = (store) => (next) => (action) => {
+const Logger = (store) => (next) => (action) => {
     console.info('logger start');
     let result = next(action);
     console.info('logger end');
@@ -17,7 +17,7 @@ const Test = (store) => (next) => (action) => {
     console.info('test end');
 };
 
-let store = createStore(rootReducer, applyMiddleware(logger, Test));
+let store = createStore(rootReducer, applyMiddleware(Logger, Test));
 
 render(
     <Provider store={store}>
