@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "react-redux": "^5.1.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.1"
   },
   "scripts": {
